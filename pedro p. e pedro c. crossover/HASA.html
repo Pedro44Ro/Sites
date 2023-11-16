@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Cine Mauá </title>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    margin-right: 8px;
+    cursor: default;
+  }
+
+  .header {
+    background-color: orange;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    border: 4px solid #ffffff;
+  }
+
+  .header-text {
+    margin: auto;
+  }
+
+  .h_meio {
+    display: flex;
+  }
+
+  .meio {
+    margin: 20px;
+    display: flex;
+    align-items: left;
+    margin-left: 39px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .info_con {
+    margin-left: 10px;
+    display: flex;
+
+  }
+
+  .lado-direito {
+    margin-left: 20px;
+  }
+
+  .sino {
+    margin-left: 22px;
+    margin-right: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px 40px 25px 40px;
+  }
+
+  .gen {
+    display: flex;
+  }
+
+  .gen > div {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .gen > div:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 0px 20px 0px 20px;
+    background-color: #ffffff;
+    color:#000000;
+    cursor:default;
+  }
+
+  .comp {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+
+  }
+
+  .comp:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+
+  }
+
+  .geral {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .pre {
+    display: flex;
+    color: gray;
+    margin-left: 7px;
+  }
+
+  .des {
+    color: green;
+    margin-left: 7px;
+  }
+  
+  .pe{
+    background-color: orange;
+      height: 4em;
+      width: 100%;
+      display: flex;
+      border: 4px solid #ffffff;
+  }
+
+  .estreia{
+    border: 4px solid #ffffff;
+    width: 100%;
+
+  }
+
+  .autoria{
+    margin-left: 10px;
+  }
+
+  .voltar {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 23px 0px 22px;
+    cursor: pointer;
+    margin-right: 93%;
+    margin-left: 15px;
+
+  }
+
+  .voltar:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+
+  a{
+   text-decoration: none;
+   color: white;
+  }
+
+  .cartaz{
+    scale: 107%;
+  }
+
+</style>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo2.png" width="84px" height="83px">
+    </div>
+    <h1 class="header-text"> Cine Mauá </h1>
+  </div>
+
+  <div class="estreia">
+  <b>
+    <h1 align="center"> Estreia Imperdível! Não perca tempo e garanta já o seu ingresso</h1>
+  </b>
+</div>
+
+  <div class="h_meio">
+
+    <div class="meio">
+
+      <div id="cartaz">
+      <img src="op1.png" width="385px" height="585px" border="3px">
+      </div>
+      <script>
+        var f = window.document.getElementById("cartaz")
+        f.addEventListener("click", clicar)
+        f.addEventListener("mouseout", sair)
+
+        function clicar(){
+          f.classList.add("cartaz")
+        }
+
+        function sair(){
+          f.classList.remove("cartaz")
+        }
+
+      </script>
+      
+      <div class="lado-direito">
+        <b>
+          <h1> Hora de Apenas uma Aventura Show</h1>
+        </b>
+
+        <h3>Duração: 1:48 horas</h3>
+
+        <div class="gen">
+          <h3>Gênero:</h3>
+          <div>
+            <h4>Comédia</h4>
+          </div>
+          <div>
+            <h4>Aventura</h4>
+          </div>
+          <div>
+            <h4>Fantasia</h4>
+          </div>
+          <div>
+            <h4>Animação</h4>
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <img src="10.png" width="43px" height="43px">
+
+          <div class="info_con">
+            <h4>Não recomendado para menores de 10 anos</h4>
+          </div>
+
+        </div>
+
+        <h4>Lancamento oficial: 16/08/2023</h4>
+        <h4>Somente na primeira semana de estreia, desconto de 20% no ingresso</h4>
+
+        <div class="geral">
+          <div class="comp">
+            <div class="bot">
+              <h4>Comprar na pré venda</h4>
+            </div>
+
+          </div>
+
+          <div class="pre">
+
+            <del>
+              <h4> R$ 30 </h4>
+            </del>
+
+            <div class="des">
+              <h3>R$ 24</h3>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sino">
+    <h3>Sinopse:</h3>
+    <h3>
+
+      <p>Prepare-se para a mais engraçada e inesperada aventura de todos os tempos! Hora de Apenas uma Aventura Show une os mundos absurdamente divertidos de Hora de Aventura e Apenas
+        um Show em uma comédia crossover épica que promete risadas infinitas.</p>
+  
+        <p>Quando um artefato mágico peculiar, conhecido como "O Amuleto do Caos", é acidentalmente ativado pelo Rei Gelado enquanto Mordecai e Rigby brincam com objetos 
+        esquecidos no parque, eles são imediatamente arrastados para o bizarro mundo de Hora de Aventura. A partir desse momento, a confusão está instalada e nada 
+        mais será como antes! Finn e Jake não podiam estar mais animados com a chegada dos dois na Terra de Ooo. Enquanto tentam entender o que aconteceu, uma série de trapalhadas 
+        acontece, e juntos, eles embarcam em uma missão maluca para desativar o amuleto e retornar Mordecai e Rigby para casa.</p>
+  
+        <p>No entanto, esse não é um simples encontro entre mundos, mas uma aventura repleta de referências cômicas, situações absurdas e encontros inesperados. Imagine Finn
+        tentando resolver os problemas de Rigby com um bom conselho, enquanto Jake e Mordecai se envolvem em uma disputa para ver quem é mais preguiçoso! Os personagens
+        secundários também não ficam de fora, Princesa Jujuba e Musculoso competem em um concurso de ciências, enquanto Marceline e Eileen formam uma improvável dupla
+         musical.</p>
+  
+        <p>Com cada cena mais engraçada do que a anterior, Hora de Apenas uma Aventura Show mostra que não importa quão diferentes sejam esses universos, eles têm algo em comum, a busca 
+        por gargalhadas! Em meio a toda essa diversão, eles aprenderão a importância da amizade, do trabalho em equipe e que não há problema que não possa ser resolvido
+         com uma boa dose de humor.</p>
+  
+       <p>Uma comédia que agrada a todas as idades, Hora de Apenas uma Aventura Show é uma explosão de risos e emoções, provando que não há limites para a 
+       criatividade quando esses personagens tão amados se encontram. Prepare-se para chorar de tanto rir, enquanto Finn e Jake se juntam a Mordecai e Rigby em uma 
+       aventura caótica que ficará para sempre na memória dos fãs dessas duas séries incríveis.</p>
+
+       <p><a href="https://br.pinterest.com/pin/429179039495449559/" target="_blank">Fonte do cartaz</a></p>
+      
+    </h3>
+  </div>
+
+  <div class="voltar">
+    <h4><a href="home.html" target="_self">voltar</a></h4>
+  </div>
+
+  <br>
+
+  <div class="pe">
+   <h4 class="autoria">Por Pedro P. e Pedro C.</h4>
+  </div>
+
+</body>
+</html>

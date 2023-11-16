@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EXEMPLOS EM FORMULARIO</title>
+</head>
+<body>
+<center>
+<form method="post" action="mailto:pedro.romandini@etec.sp.gov.br">
+
+  <label for="nome">Nome:</label>
+  <input type="text" name="nome" placeholder="Insira seu nome" id="nome" size="30" maxlength="35" required>
+  <br/><br/>
+  <label for="nome">Senha:</label>
+  <input type="password" name="senha" id="senha" size="7" maxlength="5">
+  <br/><br/>
+  
+  <h3>Radio</h3>
+
+<p>
+  <input type="radio" name="idade" id="idade5" value="5" checked>
+  <label for="idade5">Menos de 5 anos</label>
+</p>
+<p>
+  <input type="radio" name="idade" id="idade10" value="10">
+  <label for="idade10">Menos de 10 anos</label>
+</p>
+<p>
+  <input type="radio" name="idade" id="idade15" value="15">
+  <label for="idade15">Menos de 15 anos</label>
+</p>
+<p>
+  <input type="radio" name="idade" id="idade20" value="20">
+  <label for="idade20">Menos de 20 anos</label>
+</p>
+
+<h3>CHECKBOX</h3>
+Documentos : <br>
+
+<INPUT  TYPE="checkbox" name="teste" value="1"> Carteira de Profissional <br>
+<INPUT  TYPE="checkbox" name="teste" value="2"> CPF<br>
+<INPUT  TYPE="checkbox" name="teste" value="3"> Carteira de Identidade<br>
+
+<h3>SELECT OPTION</h3>
+<label for="Cidade">Municipio:</label><BR/>
+        <select name="cidade" SIZE="4">
+            <option value="vazio">Selecione</option>
+		<optgroup label="São Paulo">
+            <option value="ita">Mauá</option>
+            <option value="poa">Poá</option>
+            <option value="suz">Suzano</option>
+        </optgroup>
+        <optgroup label="Rio De Janeiro">
+            <option value="petro">Petrópolis</option>
+            <option value="nit">Niterói</option>
+            <option value="mage">Magé</option>
+        </optgroup>
+        <optgroup label="Minas Gerais">
+            <option value="ipa">Ipatinga</option>
+            <option value="ube">Uberaba</option>
+            <option value="betim">Betim</option>
+        </optgroup>
+		</select>
+<br/>
+<br/>
+
+<h3>Number</h3>
+<input type="number" max="20" min="1" step="1" name="volume">
+<br/>
+<h3>Email</h3>
+<input type="email" name="email" placeholder="email@exemplo.com">
+<br/>
+<h3>RANGE</h3>
+<input type="range" name="volume">
+  
+ <br/>
+<h3>Date</h3> 
+<input type="date" name="validade">
+<br/>
+
+<h3>Horário:</h3>
+<input type="time" name="tempo">
+ 
+ <br/>
+<h3>Color</h3>
+<input type="color" name="cor_olhos">
+
+<br/>
+<h3>TEL</h3>
+<input type="tel" name="telefone" placeholder="(99) 9999-9999">
+
+<br/>
+<h3>Search</h3>
+
+<input type="search" results="10">
+
+<br/><br/><br/>
+
+<fieldset>
+    <legend>Dados pessoais</legend>
+	<BR/><BR/>
+</fieldset>
+<BR/>
+<fieldset>
+    <legend>Cartão de crédito</legend>
+	<BR/><BR/>
+  </fieldset>
+<br/>
+  
+<fieldset>
+  <legend>Dados pessoais</legend>
+
+  <div class="form-group">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome">
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="sim" name="spam" checked>
+      Quero receber 
+	  <input type="checkbox" value="nao" name="spam">
+      Não Quero receber 
+    </label>
+  </div>
+</fieldset>
+<button type="submit">
+    Confirmar Pedido
+  </button>
+ 
+</form>
+ 
+</section>
+ 
+</center>
+</body>
+</html>

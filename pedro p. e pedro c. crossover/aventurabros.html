@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Cine Mauá </title>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    margin-right: 8px;
+    cursor: default;
+  }
+
+  .header {
+    background-color: orange;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    border: 4px solid #ffffff;
+  }
+
+  .header-text {
+    margin: auto;
+  }
+
+  .h_meio {
+    display: flex;
+  }
+
+  .meio {
+    margin: 20px;
+    display: flex;
+    align-items: left;
+    margin-left: 39px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .info_con {
+    margin-left: 10px;
+    display: flex;
+
+  }
+
+  .lado-direito {
+    margin-left: 20px;
+  }
+
+  .sino {
+    margin-left: 22px;
+    margin-right: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px 40px 25px 40px;
+  }
+
+  .gen {
+    display: flex;
+  }
+
+  .gen > div {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .gen > div:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 0px 20px 0px 20px;
+    background-color: #ffffff;
+    color:#000000;
+    cursor:default;
+  }
+
+  .comp {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+
+  }
+
+  .comp:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+
+  }
+
+  .geral {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .pre {
+    display: flex;
+    color: gray;
+    margin-left: 7px;
+  }
+
+  .des {
+    color: green;
+    margin-left: 7px;
+  }
+  
+  .pe{
+    background-color: orange;
+      height: 4em;
+      width: 100%;
+      display: flex;
+      border: 4px solid #ffffff;
+  }
+
+  .estreia{
+    border: 4px solid #ffffff;
+    width: 100%;
+
+  }
+
+  .autoria{
+    margin-left: 10px;
+  }
+
+  .voltar {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 23px 0px 22px;
+    cursor: pointer;
+    margin-right: 93%;
+    margin-left: 15px;
+
+  }
+
+  .voltar:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+
+  }
+
+  a{
+   text-decoration: none;
+   color: white;
+  }
+
+  .cartaz{
+    scale: 107%;
+  }
+
+</style>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo2.png" width="84px" height="83px">
+    </div>
+    <h1 class="header-text"> Cine Mauá </h1>
+  </div>
+
+  <div class="estreia">
+  <b>
+    <h1 align="center"> Estreia Imperdível! Não perca tempo e garanta já o seu ingresso</h1>
+  </b>
+</div>
+
+  <div class="h_meio">
+
+    <div class="meio">
+
+      <div id="cartaz">
+      <img src="op5.png" width="385px" height="585px" border="3px">
+      </div>
+
+      <script>
+        var f = window.document.getElementById("cartaz")
+        f.addEventListener("click", clicar)
+        f.addEventListener("mouseout", sair)
+
+        function clicar(){
+          f.classList.add("cartaz")
+        }
+
+        function sair(){
+          f.classList.remove("cartaz")
+        }
+
+      </script>
+      
+      <div class="lado-direito">
+        <b>
+          <h1>Hora de Super Smash Adventure</h1>
+        </b>
+
+        <h3>Duração: 1:55 horas</h3>
+
+        <div class="gen">
+          <h3>Gênero:</h3>
+          <div>
+            <h4>Ação</h4>
+          </div>
+          <div>
+            <h4>Aventura</h4>
+          </div>
+          <div>
+            <h4>Fantasia</h4>
+          </div>
+          <div>
+            <h4>Animação</h4>
+          </div>
+
+
+        </div>
+
+        <div class="info">
+
+          <img src="livre.png" width="43px" height="43px">
+
+          <div class="info_con">
+            <h4>Livre para todos os públicos</h4>
+          </div>
+
+        </div>
+
+        <h4>Lancamento oficial: 21/08/2023</h4>
+        <h4>Somente na primeira semana de estreia, desconto de 20% no ingresso</h4>
+
+        <div class="geral">
+          <div class="comp">
+            <div class="bot">
+              <h4>Comprar na pré venda</h4>
+            </div>
+
+          </div>
+
+          <div class="pre">
+
+            <del>
+              <h4> R$ 30 </h4>
+            </del>
+
+            <div class="des">
+              <h3>R$ 24</h3>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sino">
+    <h3>Sinopse:</h3>
+    <h3>
+      <p>Quando um poderoso artefato mágico é acidentalmente ativado na Terra de Ooo, Finn e Jake, são surpreendidos por
+       uma explosão de energia que os concede incríveis habilidades dos icônicos personagens de Super Smash Bros.</p>
+
+      <p>Agora, Finn ganhou as habilidades do corajoso heroi link, enquanto Jake ganhou os poderes do mario que vive na ilha cogumelo e luta contra o mal,
+      entusiasmados com suas novas habilidades, os dois amigos decidem testá-las em combates amistosos. Porém, eles logo percebem que não foram
+       os únicos afetados pelo artefato mágico, todos os habitantes da Terra de Ooo ganharam poderes dos personagens de Super Smash Bros.</p>
+      
+      <p>Enquanto Finn e Jake treinam para dominar seus novos dons, surgem problemas inesperados na Terra de Ooo, o Rei Gelado, agora com habilidades
+       de Freeze Climber do Ice Climbers, começa a congelar partes da terra, ameaçando a harmonia do reino. Marceline, com poderes de vampiro
+        combinados com as novas habilidades consedidas pela armadura de Metroid, e até mesmo a Princesa Jujuba, com habilidades curativas de Peach, se
+         encontra diante de dilemas éticos sobre como usar suas novas capacidades.</p>
+      
+      <p>Conforme a situação se intensifica, Finn e Jake percebem que precisam unir todos os moradores da Terra de Ooo para enfrentar uma ameaça maior
+       que se aproxima, uma entidade maligna que deseja usar o artefato mágico para dominar o multiverso.</p>
+      
+      <p>Com seus amigos, aliados e até mesmo inimigos, Finn e Jake embarcam em uma aventura emocionante, repleta de ação, humor e reviravoltas.
+       Aprendendo a trabalhar em equipe, explorando suas novas habilidades e enfrentando desafios impensáveis.</p>
+      
+      <p>Hora de Super Smash Adventure é uma emocionante mistura de ação, aventura e fantasia, onde os amados personagens de Hora de Aventura exploram
+       suas facetas mais heroicas, iluminando o espírito de cooperação e amizade em um mundo mágico cheio de surpresas e descobertas.</p>
+
+       <p><a href="https://br.pinterest.com/pin/605804587345743315/" target="_blank">Fonte do cartaz</a></p>
+
+    </h3>
+  </div>
+
+  <div class="voltar">
+    <h4><a href="home.html" target="_self">voltar</a></h4>
+  </div>
+
+  <br>
+
+  <div class="pe">
+   <h4 class="autoria">Por Pedro P. e Pedro C.</h4>
+  </div>
+
+</body>
+</html>

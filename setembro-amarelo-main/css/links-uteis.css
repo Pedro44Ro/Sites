@@ -1,0 +1,135 @@
+.links-uteis-container {
+  color: {
+
+    "hasImages":false,
+    "nodeIds":["26a6812e-59df-4b51-91fb-abbb943e820e"],
+    "componentUIDLs":[ {
+
+      "name":"container",
+      "node": {
+
+        "type":"element",
+        "content": {
+
+          "elementType":"container",
+          "semanticType":"div",
+          "referencedStyles": {}
+
+         
+          }
+
+          ,
+          "children":[]
+        }
+      }
+    }
+
+    ],
+    "components": {}
+
+    ,
+    "usedDesignTokens": {}
+
+    ,
+    "usedTextStyles": {}
+
+    ,
+    "usedClasses": {}
+
+    ,
+    "globals": {
+      "settings": {
+        "title": "exported component", "language":"english"
+      }
+
+      
+      "meta":[],
+      "assets":[]
+    }
+
+    
+    "assetNames": {}
+  }
+
+  ;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #27272D;
+        }
+.links-uteis-hero {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+  }
+
+.links-uteis-heading {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links-uteis-header {
+  color: #ffffff;
+  font-size: 90px;
+  max-width: 900px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+
+.links-uteis-paragraph {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  align-self: center;
+  line-height: 60px;
+  padding-left: 56px;
+  padding-right: var(--dl-space-space-threeunits);
+}
+
+.links-uteis-text001 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+@media(max-width: 767px) {
+  .links-uteis-hero {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+
+  .links-uteis-heading {
+    gap: var(--dl-space-space-unit);
+  }
+
+  .links-uteis-header {
+    font-size: 36px;
+    max-width: 70%;
+    line-height: 43px;
+  }
+
+  .links-uteis-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.llink {
+  color:darkgoldenrod;
+}

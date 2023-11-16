@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Cine Mauá </title>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    margin-right: 8px;
+    cursor: default;
+  }
+
+  .header {
+    background-color: orange;
+    height: 5em;
+    width: 100%;
+    display: flex;
+    border: 4px solid #ffffff;
+  }
+
+  .header-text {
+    margin: auto;
+  }
+
+  .h_meio {
+    display: flex;
+  }
+
+  .meio {
+    margin: 20px;
+    display: flex;
+    align-items: left;
+    margin-left: 39px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .info_con {
+    margin-left: 10px;
+    display: flex;
+
+  }
+
+  .lado-direito {
+    margin-left: 20px;
+  }
+
+  .sino {
+    margin-left: 22px;
+    margin-right: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px 40px 25px 40px;
+  }
+
+  .gen {
+    display: flex;
+  }
+
+  .gen > div {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .gen > div:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 0px 20px 0px 20px;
+    background-color: #ffffff;
+    color:#000000;
+    cursor:default;
+  }
+
+  .comp {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+
+  }
+
+  .comp:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+
+  }
+
+  .geral {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .pre {
+    display: flex;
+    color: gray;
+    margin-left: 7px;
+  }
+
+  .des {
+    color: green;
+    margin-left: 7px;
+  }
+  
+  .pe{
+    background-color: orange;
+      height: 4em;
+      width: 100%;
+      display: flex;
+      border: 4px solid #ffffff;
+  }
+
+  .estreia{
+    border: 4px solid #ffffff;
+    width: 100%;
+
+  }
+
+  .autoria{
+    margin-left: 10px;
+  }
+
+  .voltar {
+    color: rgb(2, 120, 255);
+    border: 1px solid #0278ff;
+    border-radius: 50px;
+    padding: 0px 23px 0px 22px;
+    cursor: pointer;
+    margin-right: 93%;
+    margin-left: 15px;
+
+  }
+
+  .voltar:hover {
+    background-color: #286cb9;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+
+  }
+
+  a{
+   text-decoration: none;
+   color: white;
+  }
+
+  .cartaz{
+    scale: 107%;
+  }
+
+</style>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo2.png" width="84px" height="83px">
+    </div>
+    <h1 class="header-text"> Cine Mauá </h1>
+  </div>
+
+  <div class="estreia">
+  <b>
+    <h1 align="center"> Estreia Imperdível! Não perca tempo e garanta já o seu ingresso</h1>
+  </b>
+</div>
+
+  <div class="h_meio">
+
+    <div class="meio">
+
+      <div id="cartaz">
+      <img src="op3.png" width="385px" height="585px" border="3px">
+      </div>
+
+      <script>
+        var f = window.document.getElementById("cartaz")
+        f.addEventListener("click", clicar)
+        f.addEventListener("mouseout", sair)
+
+        function clicar(){
+          f.classList.add("cartaz")
+        }
+
+        function sair(){
+          f.classList.remove("cartaz")
+        }
+
+      </script>
+      
+      <div class="lado-direito">
+        <b>
+          <h1> Hora de Aventura:Através do Aranhaverso</h1>
+        </b>
+
+        <h3>Duração: 1:36 horas</h3>
+
+        <div class="gen">
+          <h3>Gênero:</h3>
+          <div>
+            <h4>Ação</h4>
+          </div>
+          <div>
+            <h4>Aventura</h4>
+          </div>
+          <div>
+            <h4>Fantasia</h4>
+          </div>
+          <div>
+            <h4>Animação</h4>
+          </div>
+
+        </div>
+
+        <div class="info">
+
+          <img src="10.png" width="43px" height="43px">
+
+          <div class="info_con">
+            <h4>Não recomendado para menores de 10 anos</h4>
+          </div>
+
+        </div>
+
+        <h4>Lancamento oficial: 22/08/2023</h4>
+        <h4>Somente na primeira semana de estreia, desconto de 20% no ingresso</h4>
+
+        <div class="geral">
+          <div class="comp">
+            <div class="bot">
+              <h4>Comprar na pré venda</h4>
+            </div>
+
+          </div>
+
+          <div class="pre">
+
+            <del>
+              <h4> R$ 30 </h4>
+            </del>
+
+            <div class="des">
+              <h3>R$ 24</h3>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sino">
+    <h3>Sinopse:</h3>
+    <h3>
+
+      <p>Em um inusitado acontecimento, uma misteriosa tempestade dimensional atinge a Terra de Ooo, criando uma série de eventos que resulta na
+       fusão das habilidades dos personagens de Hora de Aventura com as dos lendários heróis do universo do Homem-Aranha. Agora, Finn, Jake e seus
+        amigos se veem imbuidos com poderes aracnídeos, e juntos, devem enfrentar perigosos inimigos que ameaçam destruir a harmonia do seu mundo.</p>
+
+      <p>Finn, o corajoso garoto com habilidades de Homem-Aranha, adquire a agilidade, a força e a destreza do herói aracnídeo, além de poder disparar teias, 
+        e seu fiel irmão e cão mágico, Jake  também ganha as habilidades aracnídeas e pode se esticar e moldar em diversas formas, eles formam
+        uma dupla dinâmica pronta para a ação.</p>
+      
+      <p>Com a ajuda da Princesa Jujuba, que desenvolve um traje tecnológico especial e adquire as habilidades de combate e furtividade do Homem-Aranha Noir,
+       e Marceline, a Rainha dos Vampiros, que utiliza seus poderes vampíricos combinados com os do Homem-Aranha da série Ultimate e BMO o computador-game portátil,
+       ganha a habilidade de se conectar à tecnologia do Homem-Aranha 2099, se tornando uma fonte valiosa de informações e estratégia. Juntos,
+       eles são a última esperança para impedir que os icônicos vilões do universo de hora de aventura, que adquirirem os poderes
+       dos classicos vilões do Homem-Aranha, mergulhe Ooo em uma escuridão interminável.</p>
+      
+      <p>Em meio a batalhas emocionantes, exploração de mundos nunca antes vistos e a construção de laços inquebráveis, nossos heróis se deparam com a
+       importância de trabalhar em equipe e confiar em suas próprias habilidades, enquanto lutam pela sobrevivência de seu lar.</p>
+
+       <p><a href="https://br.pinterest.com/pin/574912708678933252/" target="_blank">Fonte do cartaz</a></p>
+
+    </h3>
+  </div>
+
+  <div class="voltar">
+    <h4><a href="home.html" target="_self">voltar</a></h4>
+  </div>
+
+  <br>
+
+  <div class="pe">
+   <h4 class="autoria">Por Pedro P. e Pedro C.</h4>
+  </div>
+
+</body>
+</html>
