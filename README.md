@@ -11,5 +11,5 @@ Os projetos variam de páginas simples a layouts mais completos, focando em estr
 |------|-----------|
 | `setembro-amarelo-main` | Projeto relacionado ao Setembro Amarelo |
 | `jornal/ site` | Estrutura de site de jornal com HTML/CSS |
-| `pedro p. e pedro c. crossover` | Projeto web com layout e estilos |
+| `site-cinema` | Estrutura de site de cinema com HTML/CSS/JS |
 | Outros | Vários códigos e exercícios em HTML/CSS|
