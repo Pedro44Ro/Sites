@@ -5,7 +5,7 @@ Os projetos variam de páginas simples a layouts mais completos, focando em estr
 
 ---
 
-## 🧠 Conteúdo do repositório
+## Conteúdo do repositório
 
 | Nome | Descrição |
 |------|-----------|
